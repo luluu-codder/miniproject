@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Health and Hygiene</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8B7D4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            animation: slideDown 1s ease;
+        }
+        header h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 2.5rem;
+            animation: typing 3s steps(20) forwards;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid #fff;
+        }
+        nav {
+            text-align: center;
+            background-color: #000;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #E8B7D4;
+        }
+        section {
+            padding: 40px 20px;
+            animation: fadeIn 2s ease;
+        }
+        h2 {
+            color: #BFB8DA;
+            animation: zoomIn 1.5s ease;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            animation: fadeInUp 2s ease;
+        }
+        li {
+            font-size: 1.1rem;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* Button Styles */
+        .faq-button {
+            padding: 8px 16px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+        .faq-button:hover {
+            background-color: #E8B7D4;
+            color: #000;
+            transform: scale(1.1);
+        }
+        
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideDown {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            0% { transform: scale(0.5); }
+            100% { transform: scale(1); }
+        }
+        @keyframes fadeInUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h2>FAQ</h2>
+        <ul>
+            <li>
+                How often should I wash my hands?
+                <button class="faq-button">Read More</button>
+            </li>
+            <li>
+                What is the importance of sanitation?
+                <button class="faq-button">Read More</button>
+            </li>
+            <li>
+                How can I promote hygiene in my community?
+                <button class="faq-button">Read More</button>
+            </li>
+            <li>
+                What resources are available for health education?
+                <button class="faq-button">Read More</button>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

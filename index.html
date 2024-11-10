@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Health and Hygiene</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8B7D4;
+            color: #333;
+            animation: fadeIn 2s ease-out;
+        }
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #BFB8DA, #E8B7D4);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            border-bottom: 2px solid #ccc;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            animation: typing 3s steps(20) 1s forwards;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        nav {
+            background-color: #BFB8DA;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            top: -50px;
+            opacity: 0;
+            animation: slideDown 1s ease-out 1s forwards;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #E8B7D4;
+            color: #333;
+            border-radius: 5px;
+        }
+        section {
+            padding: 30px;
+            animation: fadeInUp 2s ease-out;
+            text-align: center;
+        }
+        h2 {
+            color: #BFB8DA;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInText 1s ease-out forwards;
+        }
+        /* Individual delays for each paragraph animation */
+        p:nth-of-type(1) { animation-delay: 0.5s; }
+        p:nth-of-type(2) { animation-delay: 1s; }
+        p:nth-of-type(3) { animation-delay: 1.5s; }
+        p:nth-of-type(4) { animation-delay: 2s; }
+        p:nth-of-type(5) { animation-delay: 2.5s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes slideDown {
+            from { top: -50px; opacity: 0; }
+            to { top: 0; opacity: 1; }
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Health and Hygiene Promotion</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h2>Promoting Healthy Living</h2>
+        <p>We aim to raise awareness about the importance of personal hygiene, sanitation, and community health.</p>
+        <p>Practicing good hygiene is essential to preventing the spread of infections and diseases. Hand washing, sanitization, and safe food handling are just a few simple ways to protect ourselves and others.</p>
+        <p>Regular physical activity and balanced nutrition also play a crucial role in promoting long-term health and wellness.</p>
+        <p>Cleanliness in personal spaces and public environments contributes to overall well-being and reduces the risk of various health issues.</p>
+        <p>By educating and encouraging each other to adopt healthy habits, we can make a positive impact on our communities and future generations.</p>
+    </section>
+</body>
+</html>
